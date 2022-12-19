@@ -1,0 +1,11 @@
+<h2>Rooms</h2>
+<% @rooms.each do |room|%>
+<p> Room:
+<%= link_to room.name, room%>
+</p>
+<p> Capacity:
+<%= room.capacity%>
+</p>
+<% end %>
+
+<%= link_to "New Room", new_room_path%>
